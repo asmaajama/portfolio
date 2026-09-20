@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmaa Jama — Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Asmaa Jama <span class="logo-dot"></span></a>
+
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark or light mode">
+                    <i class="fa-regular fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-status-tag">
+                    <span class="status-dot-pulse"></span>
+                    <span>Effat University · CS Student & Developer</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Crafting digital experiences with
+                    <span class="italic-accent">elegance</span> & rigor.
+                </h1>
+
+                <div class="hero-dynamic-text">
+                    Specializing in
+                    <span id="typewriter"></span><span class="typed-cursor">|</span>
+                </div>
+
+                <p class="hero-description">
+                    Computer Science undergraduate driven by full-stack systems,
+                    data structures, and resilient enterprise networking solutions.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="#projects" class="btn-editorial btn-editorial-primary">View Featured Work</a>
+                    <a href="#contact" class="btn-editorial btn-editorial-secondary">Get In Touch</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="portrait-frame" id="hero-portrait">
+                    <div class="portrait-img-inner">
+                        <img src="images/my-picture.jpeg" alt="Asmaa Jama">
+                    </div>
+                </div>
+
+                <div class="floating-badge">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div class="floating-badge-text">
+                        <h5>BSc Computer Science</h5>
+                        <p>Expected Graduation 2028</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <span class="section-subtitle">Biography</span>
+            <h2 class="section-title">Driven by logic, defined by detail.</h2>
+
+            <div class="about-grid">
+                <div class="about-bio">
+                    <p>
+                        I am currently pursuing a Bachelor of Science in Computer Science at
+                        Effat University in Jeddah, Saudi Arabia. My academic and practical
+                        work focuses on building reliable software systems and understanding
+                        modern digital infrastructure.
+                    </p>
+
+                    <p>
+                        From engineering full-stack web applications and implementing data
+                        structures to designing high-availability network topologies, I focus
+                        on precision, clean code, and thoughtful problem-solving.
+                    </p>
+                </div>
+
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <h4>Infrastructure</h4>
+                        <p>Enterprise Cisco topology engineering, routing design, and packet diagnostics.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>Development</h4>
+                        <p>Object-oriented programming, data structures, and full-stack web applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <span class="section-subtitle">Capabilities</span>
+            <h2 class="section-title">Technical Expertise</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-column">
+                    <div class="skill-column-header">
+                        <div class="skill-icon-box">
+                            <i class="fa-solid fa-terminal"></i>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+
+                    <div class="pill-list">
+                        <span class="skill-pill"><i class="fa-solid fa-code"></i> C++</span>
+                        <span class="skill-pill"><i class="fa-brands fa-java"></i> Java</span>
+                        <span class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="skill-pill"><i class="fa-brands fa-php"></i> PHP</span>
+                        <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="skill-pill"><i class="fa-solid fa-database"></i> SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-column">
+                    <div class="skill-column-header">
+                        <div class="skill-icon-box">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <h3>Web Systems</h3>
+                    </div>
+
+                    <div class="pill-list">
+                        <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+                        <span class="skill-pill"><i class="fa-brands fa-react"></i> React.js</span>
+                        <span class="skill-pill"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="skill-pill"><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
+                        <span class="skill-pill"><i class="fa-solid fa-database"></i> MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-column">
+                    <div class="skill-column-header">
+                        <div class="skill-icon-box">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <h3>Networking & Tools</h3>
+                    </div>
+
+                    <div class="pill-list">
+                        <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> Cisco Packet Tracer</span>
+                        <span class="skill-pill"><i class="fa-solid fa-route"></i> RIPv2 Routing</span>
+                        <span class="skill-pill"><i class="fa-solid fa-server"></i> DHCP / DNS</span>
+                        <span class="skill-pill"><i class="fa-solid fa-shield-halved"></i> TCP/IP & TLS</span>
+                        <span class="skill-pill"><i class="fa-solid fa-magnifying-glass-chart"></i> Wireshark</span>
+                        <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git / GitHub</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <span class="section-subtitle">Portfolio</span>
+            <h2 class="section-title">Selected Works</h2>
+
+            <div class="project-filter-bar">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="networking">Networking</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Campus Network -->
+                <div class="project-card" data-category="networking">
+                    <div class="project-preview-box">
+                        <img src="images/nexus-network.jpg"
+                             alt="Campus Network Infrastructure"
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80';">
+
+                        <div class="project-card-overlay">
+                            <button class="quick-view-btn"
+                                onclick="openModal('Campus Network Infrastructure', 'Designed a high-availability multi-zone enterprise network in Cisco Packet Tracer. The design includes a partial-mesh core with Cisco 1841 routers, Cisco 2960 switches, RIPv2 dynamic routing, DHCP, DNS, web services, wireless access points, and departmental LAN segmentation.')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-meta-category">Computer Networks</span>
+                        <h3 class="project-title">Campus Network Infrastructure</h3>
+                        <p class="project-desc">
+                            A Cisco Packet Tracer enterprise design featuring a redundant partial-mesh core,
+                            departmental LANs, DHCP, DNS, web services, wireless mobility, and RIPv2 routing.
+                        </p>
+
+                        <div class="project-tags-inline">
+                            <span class="tag-micro">Cisco Packet Tracer</span>
+                            <span class="tag-micro">RIPv2</span>
+                            <span class="tag-micro">DHCP / DNS</span>
+                            <span class="tag-micro">Wireless LAN</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/asmaajama/cn-project"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="btn-editorial btn-editorial-secondary">
+                                <i class="fa-brands fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe App -->
+                <div class="project-card" data-category="web">
+                    <div class="project-preview-box">
+                        <img src="images/recipe-app.jpg"
+                             alt="Recipe Web Application"
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1495521821757-a1efb6729352?auto=format&fit=crop&w=800&q=80';">
+
+                        <div class="project-card-overlay">
+                            <button class="quick-view-btn"
+                                onclick="openModal('Recipe Web Application', 'A full-stack PHP and MySQL application featuring user authentication with session handling, recipe uploads with image storage, a personalized favorites system, and client-side JavaScript form validation.')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-meta-category">Full-Stack Web</span>
+                        <h3 class="project-title">Recipe Web Application</h3>
+                        <p class="project-desc">
+                            A PHP and MySQL platform with user authentication,
+                            image uploads, and a personalized recipe favorites system.
+                        </p>
+
+                        <div class="project-tags-inline">
+                            <span class="tag-micro">PHP</span>
+                            <span class="tag-micro">MySQL</span>
+                            <span class="tag-micro">JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/asmaajama/recipe_app"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="btn-editorial btn-editorial-secondary">
+                                <i class="fa-brands fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bank Account System -->
+                <div class="project-card" data-category="software">
+                    <div class="project-preview-box">
+                        <img src="images/cpp-project.jpg"
+                             alt="Bank Account Management System"
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80';">
+
+                        <div class="project-card-overlay">
+                            <button class="quick-view-btn"
+                                onclick="openModal('Bank Account Management System', 'A C++ console application that manages user accounts, handles deposits, withdrawals, transfers, and persists data to file storage using structured File I/O.')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-meta-category">C++ & Systems</span>
+                        <h3 class="project-title">Bank Account Management System</h3>
+                        <p class="project-desc">
+                            A C++ console application that manages user accounts,
+                            handles financial transactions, and persists data to file storage.
+                        </p>
+
+                        <div class="project-tags-inline">
+                            <span class="tag-micro">C++</span>
+                            <span class="tag-micro">File I/O</span>
+                            <span class="tag-micro">MinGW-w64</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/asmaajama/bank-account-management-cpp"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="btn-editorial btn-editorial-secondary">
+                                <i class="fa-brands fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postfix Evaluator -->
+                <div class="project-card" data-category="software">
+                    <div class="project-preview-box">
+                        <img src="images/postfix-evaluator.jpg"
+                             alt="Postfix Expression Evaluator"
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80';">
+
+                        <div class="project-card-overlay">
+                            <button class="quick-view-btn"
+                                onclick="openModal('Postfix Expression Evaluator', 'A C++ console application that evaluates Reverse Polish Notation expressions using custom array-based Stack and Queue data structures. It supports addition, subtraction, multiplication, division, exponentiation, negative numbers, and validation for invalid tokens, division by zero, insufficient operands, and leftover operands.')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-meta-category">Data Structures & Algorithms</span>
+                        <h3 class="project-title">Postfix Expression Evaluator</h3>
+                        <p class="project-desc">
+                            A C++ program that evaluates Reverse Polish Notation expressions
+                            with custom Stack and Queue implementations and full error handling.
+                        </p>
+
+                        <div class="project-tags-inline">
+                            <span class="tag-micro">C++</span>
+                            <span class="tag-micro">Stack</span>
+                            <span class="tag-micro">Queue</span>
+                            <span class="tag-micro">O(n)</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/asmaajama/postfix-expression-evaluator"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="btn-editorial btn-editorial-secondary">
+                                <i class="fa-brands fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wireshark Project -->
+                <div class="project-card" data-category="networking">
+                    <div class="project-preview-box">
+                        <img src="images/wireshark-project.jpg"
+                             alt="Wireshark Traffic Analysis"
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80';">
+
+                        <div class="project-card-overlay">
+                            <button class="quick-view-btn"
+                                onclick="openModal('Protocol Packet Analysis', 'In-depth traffic capture analyzing HTTP and TLS 1.3 handshakes, DNS response latency, and packet loss diagnosis using Wireshark filters.')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-meta-category">Cybersecurity & Diagnostics</span>
+                        <h3 class="project-title">TLS & DNS Traffic Inspection</h3>
+                        <p class="project-desc">
+                            Captured live network trace files to inspect TCP handshakes,
+                            TLS session negotiation, and DNS query efficiency.
+                        </p>
+
+                        <div class="project-tags-inline">
+                            <span class="tag-micro">Wireshark</span>
+                            <span class="tag-micro">TLS 1.3</span>
+                            <span class="tag-micro">TCP Diagnostics</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal-backdrop" id="project-modal" onclick="closeModal(event)">
+        <div class="modal-window">
+            <button class="modal-close-btn" onclick="closeModalDirect()" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h3 class="project-title" id="modal-title">Project Detail</h3>
+            <p class="project-desc" id="modal-body" style="margin-top: 1rem;">
+                Detailed overview content goes here.
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-card-main">
+                <div class="contact-inner">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="contact-title">Let’s start a conversation.</h2>
+
+                    <p class="contact-body">
+                        I am currently available for Co-op internships and technical
+                        collaborations. Feel free to send an inquiry.
+                    </p>
+
+                    <div class="contact-buttons-row">
+                        <a href="mailto:asmaa.j2006@gmail.com" class="contact-chip">
+                            <i class="fa-regular fa-envelope"></i>
+                            asmaa.j2006@gmail.com
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/asmaa-jama-9a49112a7/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="contact-chip">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            LinkedIn
+                        </a>
+
+                        <a href="https://github.com/asmaajama"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="contact-chip">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Asmaa Jama. Handcrafted with warm beige modernism.</p>
+
+            <div class="footer-socials">
+                <a href="https://github.com/asmaajama"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/asmaa-jama-9a49112a7/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
